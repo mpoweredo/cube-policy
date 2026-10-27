@@ -1,0 +1,73 @@
+/* Styl „Toy Box” jak w grze: kremowe tło, łupkowy tekst, koralowe akcenty, karty z „wargą” pod spodem. */
+:root {
+  --cream: #FFF8EE;
+  --card: #FFFDF8;
+  --lip: #DFD1BC;
+  --slate: #2F4A52;
+  --slate-muted: #4F666D;
+  --coral: #FF6A3D;
+  --coral-lip: #B93D17;
+  --font: ui-rounded, "SF Pro Rounded", "Nunito", system-ui, -apple-system, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--slate);
+  font-family: var(--font);
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 16px 64px;
+}
+
+header.app {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+header.app img {
+  width: 72px;
+  height: 72px;
+  border-radius: 18px;
+  box-shadow: 0 4px 0 var(--lip);
+}
+
+h1 { font-size: 30px; font-weight: 900; margin: 0; line-height: 1.2; }
+h2 { font-size: 21px; font-weight: 800; margin: 32px 0 8px; }
+p, li { color: var(--slate-muted); }
+strong { color: var(--slate); }
+
+.card {
+  background: var(--card);
+  border-radius: 24px;
+  padding: 20px 24px;
+  margin: 16px 0;
+  box-shadow: 0 6px 0 var(--lip);
+}
+
+a { color: var(--coral-lip); font-weight: 700; }
+
+.button {
+  display: inline-block;
+  background: var(--coral);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 800;
+  padding: 12px 22px;
+  border-radius: 999px;
+  box-shadow: 0 4px 0 var(--coral-lip);
+  margin: 4px 8px 4px 0;
+}
+
+.muted { font-size: 14px; color: var(--slate-muted); }
+
+nav.lang { margin-bottom: 8px; font-size: 15px; }
